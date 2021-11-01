@@ -1,9 +1,8 @@
 import starfleet;
 
+x = '';
 
-x = 0;
-print("Welcome to the interactive Starfleet Ship Library.");
-
-while x != 1:
-    x = starfleet.library(input("Name / Regristrierungnummer: "));
-    print(x);
+while x != 'cmd(_close_)':
+  x = starfleet.library(input('Search for '));
+  print('Result:');
+  print(x);
